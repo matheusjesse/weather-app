@@ -1,24 +1,24 @@
 import styled from 'styled-components/native';
 import { fontFamily } from '../../theme/fontFamily';
-const WelcomeContainer = styled.View`
+const WelcomeContainer = styled.SafeAreaView`
     text-align: center;
     background: #1B1D22;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
 `
 
 const WelcomeTitle = styled.Text`
-    font-family: ${ fontFamily.OverpassRegular };
-    max-width: 404px;
-    min-width: 288;
-    margin: 0px 28px 0px 28px;
+    width: 80%;
     height: 79px;
     font-weight: 600;
-    font-size: 33px;
-    line-height: 42px;
+    font-size: 2em;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
     text-align: center;
+    white-space: normal;
 `
 
 export default WelcomeContainer
