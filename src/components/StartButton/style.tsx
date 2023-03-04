@@ -21,7 +21,7 @@ const StartButtonContainer = styled.TouchableOpacity`
 const ButtonText = styled.Text`
     width: 144px;
     height: 24px;
-    font-family: ${fontFamily.OverpassRegular};
+    font-family: ${fontFamily.OverpassLight};
     font-style: normal;
     font-weight: 400;
     font-size: 22px;

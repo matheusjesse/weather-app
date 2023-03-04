@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { fontFamily } from '../../theme/fontFamily';
+
 const WelcomeContainer = styled.SafeAreaView`
     text-align: center;
     background: #1B1D22;
