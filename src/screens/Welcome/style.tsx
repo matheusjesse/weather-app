@@ -7,7 +7,8 @@ const WelcomeContainer = styled.SafeAreaView`
     width: 100%;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: center;
 `
 
 const WelcomeTitle = styled.Text`

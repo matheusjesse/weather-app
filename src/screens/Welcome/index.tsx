@@ -11,6 +11,7 @@ import {
     OverpassMono_700Bold,
   } from '@expo-google-fonts/overpass-mono';
 import CloudAndThunderPNG from "../../assets/images/cloud-and-thunder.png";
+import StartButton from '../../components/StartButton';
 
 export default function Welcome() {
     let [fontsLoaded] = useFonts({
@@ -33,6 +34,7 @@ export default function Welcome() {
                 </ImageContainer>
                 <WelcomeTitle>Descubra o Clima na sua Cidade</WelcomeTitle>
                 <WelcomeText>Com o FindWeather nunca ficou tão fácil ter a previsão do tempo na palma da sua mão </WelcomeText>
+                <StartButton/>
             </WelcomeContainer>
         )
     }
