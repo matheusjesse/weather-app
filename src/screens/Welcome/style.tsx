@@ -7,13 +7,13 @@ const WelcomeContainer = styled.SafeAreaView`
     width: 100%;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 `
 
 const WelcomeTitle = styled.Text`
     width: 80%;
     font-family: ${fontFamily.OverpassRegular};
-    height: 148px;
+    height: 98px;
     font-weight: 600;
     font-size: 1.8em;
     color: #FFFFFF;
@@ -38,5 +38,13 @@ const WelcomeText = styled.Text`
     color: #AFAFAF;
 `
 
+const ImageContainer = styled.View`
+    width: 222px;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 export default WelcomeContainer
-export { WelcomeTitle, WelcomeText }
+export { WelcomeTitle, WelcomeText, ImageContainer }
