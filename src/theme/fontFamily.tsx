@@ -1,6 +1,6 @@
 export const fontFamily = {
-  OverpassLight: "OverpassMono_300Light",
-  OverpassRegular: "OverpassMono_400Regular",
-  OverpassSemiBold: "OverpassMono_600SemiBold",
-  OverpassBold: "OverpassMono_700Bold"
+  OverpassLight: "Overpass_300Light",
+  OverpassRegular: "Overpass_400Regular",
+  OverpassSemiBold: "Overpass_600SemiBold",
+  OverpassBold: "Overpass_700Bold"
 }

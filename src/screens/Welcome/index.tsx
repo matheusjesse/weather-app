@@ -3,23 +3,21 @@ import WelcomeContainer, { WelcomeText } from "./style";
 import AppLoading from 'expo-app-loading';
 import { WelcomeTitle, ImageContainer } from './style'
 import {
-    useFonts,
-    OverpassMono_300Light,
-    OverpassMono_400Regular,
-    OverpassMono_500Medium,
-    OverpassMono_600SemiBold,
-    OverpassMono_700Bold,
-  } from '@expo-google-fonts/overpass-mono';
+  useFonts,
+  Overpass_300Light,
+  Overpass_400Regular,
+  Overpass_600SemiBold,
+  Overpass_700Bold,
+} from '@expo-google-fonts/overpass';
 import CloudAndThunderPNG from "../../assets/images/cloud-and-thunder.png";
 import StartButton from '../../components/StartButton';
 
 export default function Welcome() {
     let [fontsLoaded] = useFonts({
-        OverpassMono_300Light,
-        OverpassMono_400Regular,
-        OverpassMono_500Medium,
-        OverpassMono_600SemiBold,
-        OverpassMono_700Bold,
+        Overpass_300Light,
+        Overpass_400Regular,
+        Overpass_600SemiBold,
+        Overpass_700Bold,
       });
     if (!fontsLoaded) {
       return <AppLoading />;
