@@ -19,12 +19,18 @@
     },
     "android": {
       "adaptiveIcon": {
-      "foregroundImage": "./src/assets/images/adaptive-icon-android.png",
+        "foregroundImage": "./src/assets/images/adaptive-icon-android.png",
         "backgroundColor": "#1B1D22"
-      }
+      },
+      "package": "com.matheusjesse.weatherapp"
     },
     "web": {
-     "favicon": "./src/assets/images/adaptive-icon-android.png"
+      "favicon": "./src/assets/images/adaptive-icon-android.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fa1d49a3-6a44-4d21-923f-5ca7b30d3995"
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 import { StatusBar } from "expo-status-bar";
+import * as SplashScreen from 'expo-splash-screen';
 import {
   useFonts,
   Overpass_300Light,
@@ -20,7 +21,8 @@ export default function App() {
   if (!fontsLoaded) {
     return null;
   } 
-
+  SplashScreen.preventAutoHideAsync();
+  
   return (
     <>
       <StatusBar/>
