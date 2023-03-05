@@ -13,6 +13,7 @@ const { Navigator, Screen } = createNativeStackNavigator<IStackRoutes>();
 const StackRoutes = (): JSX.Element => {
   return (
     <Navigator
+      initialRouteName="Welcome"
       screenOptions={{
         headerShown: false,
       }}

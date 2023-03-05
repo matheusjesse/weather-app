@@ -21,7 +21,8 @@ export default function App() {
   if (!fontsLoaded) {
     return null;
   } 
-  SplashScreen.preventAutoHideAsync();
+  
+  SplashScreen.hideAsync()
   
   return (
     <>
@@ -30,3 +31,6 @@ export default function App() {
     </>
   );
 }
+
+
+
