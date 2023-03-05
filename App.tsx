@@ -1,22 +1,30 @@
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Welcome from './src/screens/Welcome';
-
-const Stack = createNativeStackNavigator();
+import { StatusBar } from "expo-status-bar";
+import {
+  useFonts,
+  Overpass_300Light,
+  Overpass_400Regular,
+  Overpass_600SemiBold,
+  Overpass_700Bold,
+} from '@expo-google-fonts/overpass';
+import Routes from './src/routes';
+import React from 'react';
 
 export default function App() {
+
+  let [fontsLoaded] = useFonts({
+    Overpass_300Light,
+    Overpass_400Regular,
+    Overpass_600SemiBold,
+    Overpass_700Bold,
+  });
+  if (!fontsLoaded) {
+    return null;
+  } 
+
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-      screenOptions={{
-        headerShown: false
-      }}>
-        <Stack.Screen
-            name="Home"
-            component={Welcome}
-            options={{title: 'Welcome'}}
-          />
-      </Stack.Navigator>     
-    </NavigationContainer>
+    <>
+      <StatusBar/>
+      <Routes/>
+    </>
   );
 }
