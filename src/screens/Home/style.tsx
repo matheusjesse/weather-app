@@ -59,7 +59,7 @@ const FullContentContainer = styled.View`
 const FullContentImage = styled.View `
     width: 172px;
     height: 140px;
-    margin: 18px 0px 18px 0px;
+    margin: 40px 0px 18px 0px;
     display: flex;
     align-items: center;
 `
@@ -131,7 +131,53 @@ const TodayAndTheNext7daysText = styled.Text`
   
   margin-right: -94px;
 `
+const FullContentHeaderContainer = styled.View`
+  width: 200px;
+  height: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+`
 
+const FullContentHeaderCity = styled.View`
+  width: 80px;
+  height: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: ${fontFamily.OverpassLight};
+`
+
+const FullContentHeaderCountry = styled.View`
+  width: 68px;    
+  height: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: ${fontFamily.OverpassLight};
+`
+
+
+const FullContentHeaderDate = styled.View`
+  width: 190px;
+  height: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #AFAFAF;
+  font-family: ${fontFamily.OverpassLight};
+`
 
 export default EmptyStateContentContainer;
 export { 
@@ -145,5 +191,9 @@ export {
   FullContentTemperatureMesure,
   TodayAndTheNext7days,
   TodayAndTheNext7daysToday,
-  TodayAndTheNext7daysText
+  TodayAndTheNext7daysText,
+  FullContentHeaderContainer,
+  FullContentHeaderCity,
+  FullContentHeaderCountry,
+  FullContentHeaderDate
 }

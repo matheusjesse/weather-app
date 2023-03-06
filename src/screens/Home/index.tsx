@@ -10,13 +10,18 @@ import EmptyStateContentContainer, {
   FullContentTemperatureMesure,
   TodayAndTheNext7days,
   TodayAndTheNext7daysToday,
-  TodayAndTheNext7daysText
+  TodayAndTheNext7daysText,
+  FullContentHeaderContainer,
+  FullContentHeaderCity,
+  FullContentHeaderCountry,
+  FullContentHeaderDate
 } from './style'
 import ClimateChange from "../../assets/images/climate-change.png";
 import RainingPNG from '../../assets/images/raining.png';
 import { dataCardHourTemperature, dataWeatherDescription } from '../../mocks/mocksData';
 import WeatherDescription from '../../components/WeatherDescription';
 import CardHourTemperature from '../../components/CardHourTemperature';
+import { Ionicons } from "@expo/vector-icons";
 
 const EmptyStateContent = () => {
   return(
@@ -38,6 +43,12 @@ const EmptyStateContent = () => {
 const FullContent = () => {
   return(
     <FullContentContainer>
+      <FullContentHeaderContainer>
+        <Ionicons name="location-sharp" size={22} color={'white'} />
+        <FullContentHeaderCity>A Coruña,</FullContentHeaderCity>
+        <FullContentHeaderCountry>Espanha</FullContentHeaderCountry>
+        <FullContentHeaderDate>Domingo, 01 Jan de 2023</FullContentHeaderDate>
+      </FullContentHeaderContainer>
       <FullContentImage>
         <Image 
           source={RainingPNG}
