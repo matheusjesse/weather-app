@@ -7,7 +7,10 @@ import EmptyStateContentContainer, {
   FullContentImage,
   FullContentTemperature,
   FullContentTemperatureText,
-  FullContentTemperatureMesure
+  FullContentTemperatureMesure,
+  TodayAndTheNext7days,
+  TodayAndTheNext7daysToday,
+  TodayAndTheNext7daysText
 } from './style'
 import ClimateChange from "../../assets/images/climate-change.png";
 import RainingPNG from '../../assets/images/raining.png';
@@ -46,6 +49,10 @@ const FullContent = () => {
       </FullContentTemperature>
       <FullContentTemperatureText>Chuva Moderada</FullContentTemperatureText>
       <WeatherDescription data={dataWeatherDescription} />
+      <TodayAndTheNext7days>
+        <TodayAndTheNext7daysToday>Hoje</TodayAndTheNext7daysToday>
+        <TodayAndTheNext7daysText>Próximos 5 dias </TodayAndTheNext7daysText>        
+      </TodayAndTheNext7days>
     </FullContentContainer>
   )
 }
