@@ -25,7 +25,10 @@ export default function WeatherDescription ({ data }: IWeatherData) {
                 data.map((item) => (
                     <WeatherDescriptionItem key={item.id}>
                         <WeatherDescriptionImage>
-                            <Image source={item.icon} />                            
+                            <Image 
+                                source={item.icon} 
+                                style={{ resizeMode: 'center', width: '100%', height: '100%' }}
+                            />                            
                         </WeatherDescriptionImage>
                         <WeatherDescriptionPercent>
                             {item.value}
