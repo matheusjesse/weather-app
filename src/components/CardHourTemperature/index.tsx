@@ -1,8 +1,8 @@
-import CardHourTemperatureSection, { 
+import CardHourTemperatureContainer, { 
+    CardHourTemperatureItem,
     TemperatureText,
     TemperatureImage,
     HourText,
-    CardHourTemperatureContainer
 } from "./style";
 import { Image, ImageSourcePropType } from "react-native";
 
@@ -21,20 +21,23 @@ export default function CardHourTemperature ({
     data,
 }: ICardHourTemperatureData) {
     return(
-        <CardHourTemperatureSection>
+        <CardHourTemperatureContainer>
             {
                 data.map((item) =>(
-                    <CardHourTemperatureContainer key={item.id}>
+                    <CardHourTemperatureItem key={item.id}>
                         <TemperatureText>
-                            {`${item.temperatureValue} º`}
+                            {`${item.temperatureValue}º`}
                         </TemperatureText>
                         <TemperatureImage>
-                            <Image source={item.icon} />
+                            <Image 
+                                source={item.icon} 
+                                style={{ resizeMode: 'center', width: '100%', height: '100%' }}
+                            />
                         </TemperatureImage>
                         <HourText>{item.hour}</HourText>
-                    </CardHourTemperatureContainer>
+                    </CardHourTemperatureItem>
                 ))
             }
-        </CardHourTemperatureSection>
+        </CardHourTemperatureContainer>
     )
 }

@@ -14,8 +14,9 @@ import EmptyStateContentContainer, {
 } from './style'
 import ClimateChange from "../../assets/images/climate-change.png";
 import RainingPNG from '../../assets/images/raining.png';
-import { dataWeatherDescription } from '../../mocks/mocksData';
+import { dataCardHourTemperature, dataWeatherDescription } from '../../mocks/mocksData';
 import WeatherDescription from '../../components/WeatherDescription';
+import CardHourTemperature from '../../components/CardHourTemperature';
 
 const EmptyStateContent = () => {
   return(
@@ -53,6 +54,7 @@ const FullContent = () => {
         <TodayAndTheNext7daysToday>Hoje</TodayAndTheNext7daysToday>
         <TodayAndTheNext7daysText>Próximos 5 dias </TodayAndTheNext7daysText>        
       </TodayAndTheNext7days>
+      <CardHourTemperature data={dataCardHourTemperature}/>
     </FullContentContainer>
   )
 }
