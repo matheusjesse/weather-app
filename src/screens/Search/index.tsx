@@ -1,9 +1,16 @@
 import SearchContainer from './style';
 import { Text } from 'react-native';
-export default function Seacth() {
+import HeaderNavigation from '../../components/HeaderNavigation';
+
+export default function Seacth(): JSX.Element {
+
+    const handleNavigateHome = () => {
+        return
+      };
+      
     return(
         <SearchContainer>
-            <Text>Teste</Text>
+            <HeaderNavigation titlePage="Busca" onPress={handleNavigateHome}/>
         </SearchContainer>
     )
 }
