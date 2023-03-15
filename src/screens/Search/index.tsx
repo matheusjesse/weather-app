@@ -1,10 +1,10 @@
 import SearchContainer, { SearchButton, SearchIcon, SearchInput, SearchInputContainer } from './style';
-import { Text } from 'react-native';
 import HeaderNavigation from '../../components/HeaderNavigation';
 import { Ionicons } from "@expo/vector-icons";
+import React, { useState } from 'react';
 
 export default function Seacth() {
-
+    const [cityInput, setCityInput] = useState("");
     const handleNavigateHome = () => {
         return
       };
@@ -21,7 +21,12 @@ export default function Seacth() {
                 />
             </SearchIcon>
             <SearchInput
-             placeholder="Digite o nome de uma cidade"
+                placeholder="Digite o nome de uma cidade"
+                value={cityInput}
+                autoCapitalize="sentences"
+                onChangeText={(text) => {
+                    setCityInput(text);
+                }}
             >
                 
             </SearchInput>
