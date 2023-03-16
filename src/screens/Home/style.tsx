@@ -141,7 +141,7 @@ const FullContentHeaderContainer = styled.View`
   align-items: flex-start;
 `
 
-const FullContentHeaderCity = styled.View`
+const FullContentHeaderCity = styled.Text`
   width: 80px;
   height: 16px;
   font-weight: 400;
@@ -153,7 +153,7 @@ const FullContentHeaderCity = styled.View`
   font-family: ${fontFamily.OverpassLight};
 `
 
-const FullContentHeaderCountry = styled.View`
+const FullContentHeaderCountry = styled.Text`
   width: 68px;    
   height: 16px;
   font-weight: 400;
@@ -166,7 +166,7 @@ const FullContentHeaderCountry = styled.View`
 `
 
 
-const FullContentHeaderDate = styled.View`
+const FullContentHeaderDate = styled.Text`
   width: 190px;
   height: 12px;
   font-style: normal;

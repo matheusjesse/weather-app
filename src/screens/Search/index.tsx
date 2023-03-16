@@ -2,11 +2,29 @@ import SearchContainer, { SearchButton, SearchIcon, SearchInput, SearchInputCont
 import HeaderNavigation from '../../components/HeaderNavigation';
 import { Ionicons } from "@expo/vector-icons";
 import React, { useState } from 'react';
+import { ICardResult } from '../../components/CardResult';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { IStackRoutes } from '../../routes/stack.routes';
 
-export default function Seacth() {
+type SearchScreenNavigationProp = NativeStackNavigationProp<
+  IStackRoutes,
+  "Search"
+>;
+
+type Props = {
+  navigation: SearchScreenNavigationProp;
+};
+
+const Search = ({ navigation }: Props): JSX.Element =>  {
     const [cityInput, setCityInput] = useState("");
+    const [dataWeather, setDataWeather] = useState({} as ICardResult);
+    const [isError, setIsError] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+
+    
+
     const handleNavigateHome = () => {
-        return
+        navigation.navigate("Home");
       };
       
     return(
@@ -41,3 +59,5 @@ export default function Seacth() {
         </SearchContainer>
     )
 }
+
+export default Search;
